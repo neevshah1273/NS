@@ -2,111 +2,156 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main data-theme="night">
+      <div className="flex h-screen">
+        <div className="w-1/2 text-secondary text-5xl">
+          Looking for my experience, projects and skills?
+          <button className="btn btn-accent"> Download Resume</button>
+        </div>
+        <div className="w-1/2">
+          <button className="btn btn-ghost"> Deep Dive into my Journey</button>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="flex w-ful h-screen">
+        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
+          Image of the 
+        </div>
+        <div className="divider divider-horizontal"></div>
+        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
+          <div className="text-5xl text-primary">
+            Git Lazy Tracker
+          </div>
+          <div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">FrontEnd</h2>
+              <ul className="list-disc">
+                <li>Enhanced experience with Next.Js & Tailwind CSS</li>
+                <li>Setup of the NextJs server(proxy server)</li>
+              </ul>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">Cloud Architecture</h2>
+              <ul className="list-disc">
+                <li>Worked with the AWS CDK</li>
+                <li>Architect cloud infrastructure utilizing the AWS services like S3, Lambda, EC2 & dynamoDB</li>
+              </ul>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">Teamwork is a dreamwork</h2>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex w-ful h-screen">
+        
+        
+        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
+          <div className="text-5xl text-primary">
+            Welcome Broker
+          </div>
+          <div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">App Development</h2>
+              <ul className="list-disc">
+                <li>Enhanced experience of Flutter</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">Backend</h2>
+              <ul className="list-disc">
+                <li>Proeficient in NodeJs</li>
+                <li>Setup Notification system</li>
+              </ul>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title"></h2>
+              <ul className="list-disc">
+                <li>Worked with NOSQL DB - MongoDB</li>
+                <li>Worked with Docker & AWS</li>
+                <li>Responsible for the entire product managing updates in the Google Play store and Apple app store</li>
+              </ul>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">Leadership and learning are indispensable to each other</h2>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div className="divider divider-horizontal"></div>
+        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
+          <div className="flex flex-row space-x-3">
+            <div className="row-auto">
+              <div className="columns-auto">
+                <Image 
+                  src={'/assets/01.jpg'}
+                  alt="Welcome Broker"
+                  width={200}
+                  height={30}
+                  className="img01"
+                >
+                </Image>
+                <Image 
+                  src={'/assets/02.jpg'}
+                  alt="Welcome Broker"
+                  width={400}
+                  height={30}
+                  className="img02"
+                >
+                </Image>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div className="flex w-ful h-screen">
+        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
+          Image of the 
+        </div>
+        <div className="divider divider-horizontal"></div>
+        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
+          <div className="text-5xl text-primary">
+            Apice Tech Pvt Ltd
+          </div>
+          <div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">FrontEnd</h2>
+              <ul className="list-disc">
+                <li>Proficient in React.js, Redux, and SCSS, with extensive experience in creating user-friendly and efficient interfaces.</li>               
+              </ul>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">backend</h2>
+              <ul className="list-disc">
+                <li>Experienced in developing robust back-end services using Java and Spring Boot, focusing on microservice-based architecture.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl mb-5">
+            <div className="card-body">
+              <h2 className="card-title">Learning is the only constant.</h2>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
     </main>
   );

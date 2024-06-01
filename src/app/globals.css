@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.img01{
+  height: 350px !important;
+  border-radius: 10%;
+}
+
+.img02{
+  border-radius: 7%;
+}
