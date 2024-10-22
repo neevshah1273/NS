@@ -114,7 +114,7 @@ export default function Home() {
        */}
       <div className="flex w-full h-screen" id="GLT">
         <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GvwC1VoxJh8?si=tcunBF6WSPxXx6y4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GvwC1VoxJh8?si=tcunBF6WSPxXx6y4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         <Image 
           src={'/assets/05.png'}
           alt="Welcome Broker"
@@ -331,7 +331,7 @@ export default function Home() {
           <div className="flex flex-row space-x-3">
             <div className="">
               <div className="flex flex-col gap-x-4 gap-y-4">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_u70tJwaVh4?si=0RhKBE0Tr-fPhG0l" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_u70tJwaVh4?si=0RhKBE0Tr-fPhG0l" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
               <div className="w-full flex justify-center items-center">
               <a href="https://link.springer.com/chapter/10.1007/978-981-19-2894-9_19" target="_blank" rel="noopener noreferrer">
                 <Image 
