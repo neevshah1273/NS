@@ -1,12 +1,126 @@
-import Image from "next/image";
+// import Head from 'next/head';
+ import Image from 'next/image';
+
+// export default function Home() {
+//   return (
+//     <main data-theme="night" className="bg-gray-900 text-white min-h-screen overflow-x-hidden">
+//       <Head>
+//         <title>Portfolio | Neev Shah</title>
+//         <meta name="description" content="Portfolio featuring futuristic design and data visualization projects." />
+//       </Head>
+
+//       {/* Navbar */}
+//       <header className="fixed w-full top-0 bg-gray-900/80 backdrop-blur-lg py-4 px-8 flex justify-between items-center z-50">
+//         <h1 className="text-2xl font-bold">Neev Shah</h1>
+//         <nav>
+//           <ul className="flex gap-6 text-lg">
+//             <li><a href="#about" className="hover:text-teal-400">About</a></li>
+//             <li><a href="#projects" className="hover:text-teal-400">Projects</a></li>
+//             <li><a href="#contact" className="hover:text-teal-400">Contact</a></li>
+//           </ul>
+//         </nav>
+//       </header>
+
+//       {/* Hero Section */}
+//       <section className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 text-center relative">
+//         <div className="z-10">
+//           <h2 className="text-5xl font-bold mb-4">Crafting <span className="text-teal-400">Intuitive Experiences</span></h2>
+//           <p className="text-xl mb-8"> Problem Solver | Software Engineer | Product Thinker</p>
+//           <a href="#projects" className="bg-teal-400 text-gray-900 py-3 px-6 rounded-full font-semibold hover:bg-teal-300 transition">View My Work</a>
+//         </div>
+//       </section>
+
+//       {/* About Section */}
+//       <section id="about" className="py-20 px-8 text-center bg-gray-800">
+//         <h2 className="text-4xl font-bold mb-4">About Me</h2>
+//         <p className="text-lg max-w-2xl mx-auto">
+//           I specialize in designing seamless user experiences that blend functionality and aesthetics. My focus is on data visualization, ensuring users gain insights through intuitive interactions.
+//         </p>
+//       </section>
+
+//       {/* Projects Section */}
+//       <section id="projects" className="py-20 px-8 bg-gray-900 text-center">
+//         <h2 className="text-4xl font-bold mb-10">Featured Projects</h2>
+//         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+//           <div className="bg-gray-800 p-6 rounded-xl hover:scale-105 transition transform shadow-lg">
+//             <Image src="/assets/05.png" alt="Git Lazy Tracker" width={400} height={200} className="rounded-lg" />
+//             <h3 className="text-2xl text-teal-400 font-semibold mt-4">Git Lazy Tracker</h3>
+//             <p>Next.js & Tailwind CSS-based web app tracking GitHub contributions with AWS cloud infrastructure.</p>
+//           </div>
+//           <div className="bg-gray-800 p-6 rounded-xl hover:scale-105 transition transform shadow-lg">
+//             <Image src="/assets/WB06.png" alt="Welcome Broker" width={400} height={200} className="rounded-lg" />
+//             <h3 className="text-2xl text-teal-400 font-semibold mt-4">Welcome Broker</h3>
+//             <p>Flutter-powered mobile app with Node.js backend, Docker, AWS integration, and MongoDB for real-time data.</p>
+//           </div>
+//           <div className="bg-gray-800 p-6 rounded-xl hover:scale-105 transition transform shadow-lg">
+//             <Image src="/assets/MC2.gif" alt="Nuclear Leakage Visualization" width={400} height={200} className="rounded-lg" />
+//             <h3 className="text-2xl text-teal-400 font-semibold mt-4">Nuclear Leakage Visualization</h3>
+//             <p>Data-driven visualization with D3.js, Flask backend, and PostgreSQL for nuclear leakage tracking.</p>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Contact Section */}
+//       <section id="contact" className="py-20 px-8 bg-gray-800 text-center">
+//         <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
+//         <p className="text-lg mb-6">Interested in collaborating? Let's build something amazing.</p>
+//         <a href="mailto:neevshah@example.com" className="bg-teal-400 text-gray-900 py-3 px-6 rounded-full font-semibold hover:bg-teal-300 transition">Get in Touch</a>
+//       </section>
+//       {/* Footer */}
+//       <footer className="bg-gray-900 text-center py-4 text-sm">
+//         © 2025 Neev Shah. All rights reserved.
+//       </footer>
+//     </main>
+//   );
+// }
+/*
+This is a Next.js + Tailwind CSS project for a UX Portfolio Website.
+The project includes:
+- Futuristic hero section with dynamic animations.
+- Responsive design using Tailwind CSS.
+- Contact section aligned with reference custom CSS.
+- Design consistency with exact colors, gradients, font sizes from the provided reference.
+*/
+
+// 1. pages/index.js (Main Page)
+
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <main data-theme="night">
-     <div className="fixed bottom-0 left-0 w-full p-4">
-        <nav className="flex justify-center items-center">
-          <div>
-            <h6 className="text-2xl footer-title text-center">Connect</h6>
+    <div className="bg-[#0e0e1b] text-[#f5f5f5] min-h-screen overflow-x-hidden font-[Poppins, sans-serif]">
+      <Head>
+        <title>Portfolio | Neev Shah</title>
+        <meta name="description" content="Portfolio featuring projects." />
+      </Head>
+
+      {/* Navbar */}
+      <header className="navbar fixed w-full top-0 bg-[rgba(14,14,27,0.9)] backdrop-blur-lg py-5 px-[50px] flex justify-between items-center z-50">
+        <h1 className="text-[1.8rem] font-semibold">Neev Shah</h1>
+        <nav>
+          <ul className="flex gap-[30px] text-lg font-normal list-none">
+            <li><a href="#about" className="">About</a></li>
+            <li><a href="#projects" className="">Projects</a></li>
+            <li><a href="#contact" className="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="hero h-screen flex flex-col justify-center items-center bg-[radial-gradient(ellipse_at_bottom,_#1b2735_0%,_#090a0f_100%)] text-center animate-fadeIn ">
+        <div className="hero-content z-10 flex-1 flex flex-col ">
+          <h2 className="text-[4rem] font-semibold mt-20">
+          Building for  <span className="text-[#00ffe0]">Impact,</span> 
+          <br/>
+          Engineering for <span className="text-[#00ffe0]"> Scale</span>
+          </h2>
+          <p className="my-[25px] text-[1.25rem]">Problem Solver | Software Engineer | System Architect</p>
+          <a href="#projects" className="cta-btn py-[15px] px-[30px] border-2 border-[#00ffe0] text-[#00ffe0] font-semibold rounded-full hover:bg-[#00ffe0] hover:text-[#0e0e1b] transition-all duration-300">
+            View My Work
+          </a>
+        </div>
+        <div className='h-24'>
+            <h6 className="text-2xl text-center">Connect</h6>
             <div className="flex justify-center space-x-4 mt-2">
               <a href="https://github.com/neevshah1273" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
@@ -25,457 +139,99 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </nav>
-      </div>
+      </section>
 
-      <div className="flex h-screen justify-center items-center flex-col">
+      {/* About Section */}
+      <section id="about" className="about py-[100px] px-[50px] text-center bg-[#0e0e1b]">
+        <h2 className="text-[2.5rem] font-semibold mb-[20px]">About Me</h2>
+        <p className="text-[1.2rem] max-w-[800px] mx-auto leading-relaxed">
+        I specialize in designing and developing high-performance software solutions that balance functionality, scalability, and maintainability. My expertise spans full-stack development, backend architecture, and frontend engineering, with a strong foundation in cloud computing, Git workflows, containerization, and CI/CD pipelines. I build robust, scalable applications using modern frameworks and technologies, ensuring reliability and efficiency across web and mobile platforms. Additionally, I integrate large language models (LLMs) to enhance AI-driven features and optimize system performance.
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      
+      <section id="projects" className="py-20 px-8 bg-gray-900 text-center">
+         <h2 className="text-4xl font-bold mb-10">Featured Work</h2>
+         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="bg-gray-800 p-6 rounded-xl hover:scale-105 transition transform shadow-lg">
+            
+            <div className="w-full h-[300px] flex items-center justify-center rounded-lg">
+              <Image
+                src="/assets/05.png"
+                alt="Git Lazy Tracker"
+                width={400}
+                height={300}
+                className="rounded-lg object-contain !w-full !h-full"
+              />
+            </div>
+            
+             {/* <Image src="/assets/05.png" alt="Git Lazy Tracker" width={400} height={200} className="rounded-lg" /> */}
+            <h3 className="text-2xl text-teal-400 font-semibold mt-4">Git Lazy Tracker</h3>
+            <p>Next.js & Tailwind CSS-based web app tracking GitHub contributions with AWS cloud infrastructure.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-xl hover:scale-105 transition transform shadow-lg">
+            <div className="w-full h-[300px] flex items-center justify-center rounded-lg">
+              <Image 
+                src="/assets/WB08.png" 
+                alt="Welcome Broker" 
+                width={400} 
+                height={300} 
+                className="rounded-lg !w-full !h-full object-contain"/>
+              </div>
+              <h3 className="text-2xl text-teal-400 font-semibold mt-4">Welcome Broker</h3>
+              <p>Flutter-powered mobile app with Node.js backend, Docker, AWS integration, and MongoDB for real-time data.</p>
+           </div>
+           <div className="bg-gray-800 p-6 rounded-xl hover:scale-105 transition transform shadow-lg">
+              <div className="w-full h-[300px] flex items-center justify-center rounded-lg">
+                <Image 
+                  src="/assets/MC2.gif" 
+                  alt="Nuclear Leakage Visualization" 
+                  width={400}
+                  height={300} 
+                  className="rounded-lg object-contain !w-full !h-full" />
+                </div>
+                <h3 className="text-2xl text-teal-400 font-semibold mt-4">Nuclear Leakage Visualization</h3>
+                <p>Data-driven visualization with D3.js, Flask backend, and PostgreSQL for nuclear leakage tracking.</p>
+              </div>
+            </div>
+            <div className="projects py-[100px] px-[50px] bg-[#131323] text-center">
+              <h2 className="text-[2.5rem] font-semibold mb-[40px]">Other Projects</h2>
+              <div className="project-grid grid gap-[40px] grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
+                  <div className="project-card bg-[#1e1e35] p-[30px] rounded-[20px] shadow-lg hover:shadow-[0px_20px_40px_rgba(0,255,224,0.2)] hover:-translate-y-2 transition-all">
+                    <h3 className="text-[1.5rem] text-[#00ffe0] mb-[10px] font-semibold">Crimelens</h3>
+                    <p> Crafted a data visualization dashboard that shows various studies of crime in the US using Next.js, D3.js, GraphQL and a Java Spring-based backend.</p>
+                  </div>
+                  <div className="project-card bg-[#1e1e35] p-[30px] rounded-[20px] shadow-lg hover:shadow-[0px_20px_40px_rgba(0,255,224,0.2)] hover:-translate-y-2 transition-all">
+                    <h3 className="text-[1.5rem] text-[#00ffe0] mb-[10px] font-semibold">Electchain</h3>
+                    <p>Architected & Developed a blockchain-based E-Voting android application using Kotlin, Node.Js and Solidity that included various security features.</p>
+                  </div>
+                  <div className="project-card bg-[#1e1e35] p-[30px] rounded-[20px] shadow-lg hover:shadow-[0px_20px_40px_rgba(0,255,224,0.2)] hover:-translate-y-2 transition-all">
+                    <h3 className="text-[1.5rem] text-[#00ffe0] mb-[10px] font-semibold">Auction11</h3>
+                    <p>Now building an IPL fantasy auction simulator</p>
+                  </div>
+              </div>
+            </div>
+       </section>
+       {/* <section id="projects" className="projects py-[100px] px-[50px] bg-[#131323] text-center"> */}
        
-      <div className="w-full flex flex-row justify-evenly">
+      {/* </section> */}
+      {/* Contact Section */}
+      <section id="contact" className="contact py-[100px] px-[50px] text-center bg-[#0e0e1b]">
+        <h2 className="text-[2.5rem] font-semibold mb-[20px]">Let's Connect</h2>
+        <p className="text-[1.2rem] mb-[30px] leading-relaxed">
+          Interested in collaborating? Let's build something amazing.
+        </p>
+        <a href="mailto:neevshah1273@gmail.com" className="cta-btn py-[15px] px-[30px] border-2 border-[#00ffe0] text-[#00ffe0] font-semibold rounded-full hover:bg-[#00ffe0] hover:text-[#0e0e1b] transition-all duration-300">
+          Get in Touch
+        </a>
+      </section>
 
-        <div className="w-1/2 flex flex-col justify-center ">
-          <div className="flex justify-center">
-          <div className="align-middle content-center items-center m-auto my-auto headshot headshot-2"></div>
-        
-        
-        </div>
-          
-            <h1 className="text-5xl flex justify-center">
-                    Hi, I'm
-            </h1> 
-            <h1 className="text-primary text-7xl flex justify-center">
-              Neev Shah
-            </h1>
-            <div className="h-20"></div>
-            <h4 className="mx-10 mt-4 text-3xl flex justify-center text-center">I'm a Software Engineer passionate about creating scalable products and developing impactful solutions that solve real-world problems.</h4>
-
-        </div>
-
-      <div className="w-1/2 flex flex-col items-center justify-center">
-      <div className="m-10 text-5xl">
-            <h6>Looking for my experiences, projects and skills?</h6>
-            <div className="flex flex-col justify-center gap-y-8 mt-8 w-4/5">
-
-            
-            {/* <button className="btn btn-accent"> */}
-              <a className="btn btn-accent" href="#GLT"> Deep Dive into my Journey </a> 
-            {/* </button>  
-             */}
-            {/* <button className="btn btn-accent"> */}
-            <a className="btn btn-accent" href="/assets/Neev_Shah_Resume.pdf" download> Download Resume</a>
-            {/* </button> */}
-                
-            
-            </div>
-      </div>
-      </div>
-      
-      </div>
-        
-      
-      
-      
-
-        {/* <div className="w-1/2 flex flex-col justify-center items-center">
-        <div className="flex flex-row">
-        <div className="align-middle content-center items-center m-auto my-auto headshot headshot-2"></div>
-
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-5xl justify-start">
-              Hi, I'm
-            </h1>
-            <h1 className="text-primary text-7xl">
-              Neev Shah
-            </h1>
-          </div>
-        </div>
-       
-        
-        
-        <h4 className="mx-10 mt-20 text-3xl">I'm a Software Engineer passionate about creating scalable products and developing impactful solutions that solve real-world problems.</h4>
-
-
-        </div>
-        <div className="w-1/2 flex flex-row items-center text-secondary text-5xl">
-          <div className="m-10">
-            <h6>Looking for my experiences, projects and skills?</h6>
-            <div className="flex justify-center gap-x-8 mt-8">
-
-            
-            <button className="btn btn-accent"> Deep Dive into my Journey</button>  
-            <button className="btn btn-accent"> Download Resume</button>
-            </div>
-          </div>
-            
-            
-          </div> */}
-      </div>
-      {/**
-       * Git Lazy Tracker
-       */}
-      <div className="flex w-full h-screen" id="GLT">
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GvwC1VoxJh8?si=tcunBF6WSPxXx6y4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-        <Image 
-          src={'/assets/05.png'}
-          alt="Welcome Broker"
-          width={550}
-          height={60}
-          className="img02"
-        >
-        </Image>
-
-        
-        </div>
-        <div className="divider divider-horizontal"></div>
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="text-5xl text-primary">
-            Git Lazy Tracker
-          </div>
-          <div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">FrontEnd</h2>
-              <ul className="list-disc">
-                <li>Enhanced experience with Next.Js & Tailwind CSS</li>
-                <li>Setup of the NextJs server(proxy server)</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Cloud Architecture</h2>
-              <ul className="list-disc">
-                <li>Worked with the AWS CDK</li>
-                <li>Architect cloud infrastructure utilizing the AWS services like S3, Lambda, EC2 & dynamoDB</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Teamwork is a dreamwork</h2>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex w-ful h-screen">
-        
-        
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="text-5xl text-primary">
-            Welcome Broker
-          </div>
-          <div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">App Development</h2>
-              <ul className="list-disc">
-                <li>Enhanced experience of Flutter</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Backend</h2>
-              <ul className="list-disc">
-                <li>Proeficient in NodeJs</li>
-                <li>Setup Notification system</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title"></h2>
-              <ul className="list-disc">
-                <li>Worked with NOSQL DB - MongoDB</li>
-                <li>Worked with Docker & AWS</li>
-                <li>Responsible for the entire product managing updates in the Google Play store and Apple app store</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Leadership and learning are indispensable to each other</h2>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div className="divider divider-horizontal"></div>
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="flex flex-row space-x-3">
-            <div className="">
-              <div className="flex gap-x-4">
-                <Image 
-                  src={'/assets/WB06.png'}
-                  alt="Welcome Broker"
-                  width={330}
-                  height={50}
-                  className="img03 rounded-3xl"
-                >
-                </Image>
-                <Image 
-                  src={'/assets/WB05.png'}
-                  alt="Welcome Broker"
-                  width={330}
-                  height={30}
-                  className="img03 rounded-3xl"
-                >
-                </Image>
-              </div>
-            </div>
-            
-            
-          </div>
-        </div>
-      </div>
-      <div className="flex w-full h-screen">
-        <div className="grid h-full w-1/2 flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="w-full p-16 ">
-              <div className="transition-colors ease-linear shadow-md">
-                <div className="w-full h-12 rounded-t-lg bg-gray-200 dark:bg-gray-900 flex justify-start items-center space-x-1.5 px-4">
-                    <span className="w-3 h-3 border-2 border-transparent dark:border-red-400 rounded-full bg-red-400 dark:bg-transparent "></span>
-                    <span className="w-3 h-3 border-2 border-transparent dark:border-yellow-400 rounded-full bg-yellow-400 dark:bg-transparent"></span>
-                    <span className="w-3 h-3 border-2 border-transparent dark:border-green-400 rounded-full bg-green-400 dark:bg-transparent"></span>
-                </div>
-                <div className="bg-gray-100 dark:bg-gray-700 border-t-0 w-full h-100 rounded-b-lg">
-                <Image 
-                    src={'/assets/APC01.png'}
-                    alt="Apice Tech"
-                    layout="responsive"
-                    width={700}
-                    height={30}
-                    className="rounded-lg"
-                  >
-                  </Image>
-                </div>
-            </div>
-           
-          </div>
-        
-        </div>
-        <div className="divider divider-horizontal"></div>
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="text-5xl text-primary">
-            Apice Tech Pvt Ltd
-          </div>
-          <div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">FrontEnd</h2>
-              <ul className="list-disc">
-                <li>Proficient in React.js, Redux, and SCSS, with extensive experience in creating user-friendly and efficient interfaces.</li>               
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">backend</h2>
-              <ul className="list-disc">
-                <li>Experienced in developing robust back-end services using Java and Spring Boot, focusing on microservice-based architecture.</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Learning is the only constant.</h2>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex w-ful h-screen">
-        
-        
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="text-5xl text-primary">
-            ElectChain
-          </div>
-          <div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">App Development</h2>
-              <ul className="list-disc">
-                <li>Worked with Kotlin, Jetpack Compose</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Backend</h2>
-              <ul className="list-disc">
-                <li>Worked with NodeJs</li>
-                <li>Integreated with Smart contract</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title"> Blockchain Development</h2>
-              <ul className="list-disc">
-                <li>Developed Smart contract using Solidity</li>
-                <li>proof of work-based secured voting transactions</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Staying adaptable with technology keeps you resilient in an ever-changing landscape.</h2>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div className="divider divider-horizontal"></div>
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="flex flex-row space-x-3">
-            <div className="">
-              <div className="flex flex-col gap-x-4 gap-y-4">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_u70tJwaVh4?si=0RhKBE0Tr-fPhG0l" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-              <div className="w-full flex justify-center items-center">
-              <a href="https://link.springer.com/chapter/10.1007/978-981-19-2894-9_19" target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src={'/assets/publishing.png'}
-                  alt="RP"
-                  width={30}
-                  height={12}
-                  className="rounded-3xl"
-                />
-              </a>
-              </div>
-                
-              </div>
-            </div>
-            
-            
-          </div>
-        </div>
-      </div>
-      <div className="flex w-full h-screen">
-        <div className="grid h-full w-1/2 flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="w-full p-16 ">
-              <div className="transition-colors ease-linear shadow-md">
-                <div className="w-full h-12 rounded-t-lg bg-gray-200 dark:bg-gray-900 flex justify-start items-center space-x-1.5 px-4">
-                    <span className="w-3 h-3 border-2 border-transparent dark:border-red-400 rounded-full bg-red-400 dark:bg-transparent "></span>
-                    <span className="w-3 h-3 border-2 border-transparent dark:border-yellow-400 rounded-full bg-yellow-400 dark:bg-transparent"></span>
-                    <span className="w-3 h-3 border-2 border-transparent dark:border-green-400 rounded-full bg-green-400 dark:bg-transparent"></span>
-                </div>
-                <div className="bg-gray-100 dark:bg-gray-700 border-t-0 w-full h-88 rounded-b-lg">
-                <Image 
-                    src={'/assets/MC2.gif'}
-                    alt="Apice Tech"
-                    layout="responsive"
-                    width={700}
-                    height={30}
-                    className="rounded-lg"
-                  >
-                  </Image>
-                </div>
-            </div>
-           
-          </div>
-        
-        </div>
-        <div className="divider divider-horizontal"></div>
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="text-5xl text-primary">
-            Nuclear leakage visualization
-          </div>
-          <div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">FrontEnd</h2>
-              <ul className="list-disc">
-                <li>Data driven Magic with D3.js</li>               
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">backend</h2>
-              <ul className="list-disc">
-                <li>Worked with Flask and PostgreSQL</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Mastering visualization transforms complex ideas into clear, actionable insights.</h2>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex w-ful h-screen">
-        
-        
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="text-5xl text-primary">
-            Crimelens
-          </div>
-          <div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">FrontEnd Development</h2>
-              <ul className="list-disc">
-                <li>Worked with Next.Js & Tailwind CSS</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Backend</h2>
-              <ul className="list-disc">
-                <li>Worked Java Springboot</li>
-                <li> Worked with services Apache Jena Fuseki </li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Knowledge Graph</h2>
-              <ul className="list-disc">
-                <li>Preprocessed the 3 datasets, prepared the ontology according to the datasets, created a Knowledge graph</li>
-                <li>ran the SPARQL queries to fetch open linked data from the Apache Jena.</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl mb-5">
-            <div className="card-body">
-              <h2 className="card-title">Embracing new challenges fuels growth and sparks innovation.</h2>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div className="divider divider-horizontal"></div>
-        <div className="grid h-full flex-grow card bg-base-300 rounded-box place-items-center">
-          <div className="flex flex-row space-x-3">
-            <div className="">
-              <div className="flex gap-x-4">
-                <Image 
-                  src={'/assets/CL.gif'}
-                  alt="Welcome Broker"
-                  width={700}
-                  height={40}
-                  className="rounded-xl"
-                >
-                </Image>
-                {/* <Image 
-                  src={'/assets/WB05.png'}
-                  alt="Welcome Broker"
-                  width={330}
-                  height={30}
-                  className="img03 rounded-3xl"
-                >
-                </Image> */}
-              </div>
-            </div>
-            
-            
-          </div>
-        </div>
-      </div>
-    </main>
+      {/* Footer */}
+      <footer className="py-[30px] text-center bg-[#0e0e1b] text-[0.9rem]">
+        © 2025 Neev Shah. All rights reserved.
+      </footer>
+    </div>
   );
 }
+

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "14.2.2",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-dom": "^18"
   },
   "devDependencies": {
@@ -19,6 +19,7 @@
     "@types/react-dom": "^18",
     "daisyui": "^4.10.2",
     "postcss": "^8",
+    "prettier": "3.5.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

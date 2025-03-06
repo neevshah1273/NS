@@ -15,6 +15,9 @@ const config: Config = {
       },
       spacing: {
         '100': '25rem'
+      },
+      animation:{
+        pulse: 'pulse 3s infinite',
       }
     },
   },
